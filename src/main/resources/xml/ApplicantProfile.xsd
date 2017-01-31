@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://www.jsc.applicantProfile.se" elementFormDefault="qualified">
+    <xsd:element name="applicantProfile">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="personalInformation">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="ApplicantName" type="xsd:string"/>
+                            <xsd:element name="City" type="xsd:string"/>
+                            <xsd:element name="SSN">
+                                <xsd:simpleType>
+                                    <xsd:restriction base="xsd:string">
+                                        <xsd:pattern value="\d{6}-\d{4}"/>
+                                    </xsd:restriction>
+                                </xsd:simpleType>
+                            </xsd:element>
+                            <xsd:element name="DOB">
+                                <xsd:simpleType>
+                                    <xsd:restriction base="xsd:string">
+                                        <xsd:pattern value="\d{4}-\d{2}-\d{2}"/>
+                                    </xsd:restriction>
+                                </xsd:simpleType>
+                            </xsd:element>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="EducationalQualification">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="University" type="xsd:string"/>
+                            <xsd:element name="Degree" type="xsd:string"/>
+                            <xsd:element name="PassingYear" type="xsd:string"/>
+                            <xsd:element name="NameOfProgramme" type="xsd:string"/>
+                            <xsd:element name="TotalGrade">
+                                <xsd:simpleType>
+                                    <xsd:restriction base="xsd:float">
+                                        <xsd:pattern value="\d+\.\d">
+                                        </xsd:pattern>
+                                    </xsd:restriction>
+                                </xsd:simpleType>
+                            </xsd:element>
+                            <xsd:element name="DurationOfProgramme">
+                                <xsd:simpleType>
+                                    <xsd:restriction base="xsd:string">
+                                        <xsd:pattern value="\d{1}"/>
+                                    </xsd:restriction>
+                                </xsd:simpleType>
+                            </xsd:element>
+                            <xsd:element name="PeriodOfProgramme">
+                                <xsd:simpleType>
+                                    <xsd:restriction base="xsd:string">
+                                        <xsd:pattern value="\d{4}-\d{4}"/>
+                                    </xsd:restriction>
+                                </xsd:simpleType>
+                            </xsd:element>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="EmploymentInfo">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="Employment" minOccurs="1" maxOccurs="unbounded">
+                                <xsd:complexType>
+                                    <xsd:sequence>
+                                        <xsd:element name="companyName" type="xsd:string"/>
+                                        <xsd:element name="Designation" type="xsd:string"/>
+                                        <xsd:element name="startDate">
+                                            <xsd:simpleType>
+                                                <xsd:restriction base="xsd:string">
+                                                    <xsd:pattern value="\d{4}-\d{2}-\d{2}"/>
+                                                </xsd:restriction>
+                                            </xsd:simpleType>
+                                        </xsd:element>
+                                        <xsd:element name="endDate">
+                                            <xsd:simpleType>
+                                                <xsd:restriction base="xsd:string">
+                                                    <xsd:pattern value="\d{4}-\d{2}-\d{2}"/>
+                                                </xsd:restriction>
+                                            </xsd:simpleType>
+                                        </xsd:element>
+                                    </xsd:sequence>
+                                </xsd:complexType>
+                            </xsd:element>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>
+

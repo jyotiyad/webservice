@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://www.jsc.transcript.se" elementFormDefault="qualified">
+    <xsd:element name="transcript">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="StudentFirstName" type="xsd:string"/>
+                <xsd:element name="StudentLastName" type="xsd:string"/>
+                <xsd:element name="StudentId" type="xsd:string"/>
+                <xsd:element name="DOB" type="xsd:string"/>
+                <xsd:element name="Programme" type="xsd:string"/>
+                <xsd:element name="MediumOfInstruction" type="xsd:string"/>
+                <xsd:element name="Courses">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="Course" minOccurs="1" maxOccurs="unbounded">
+                                <xsd:complexType>
+                                    <xsd:sequence>
+                                        <xsd:element name="NameOfCourse" type="xsd:string"/>
+                                        <xsd:element name="GradesInCourse">
+                                            <xsd:simpleType>
+                                                <xsd:restriction base="xsd:float">
+                                                    <xsd:pattern value="\d+\.\d">
+                                                    </xsd:pattern>
+                                                </xsd:restriction>
+                                            </xsd:simpleType>
+                                        </xsd:element>
+                                        <xsd:element name="CodeForCourse">
+                                            <xsd:simpleType>
+                                                <xsd:restriction base="xsd:string">
+                                                    <xsd:pattern value="[A-Z]{2}\d{4}">
+                                                    </xsd:pattern>
+                                                </xsd:restriction>
+                                            </xsd:simpleType>
+                                        </xsd:element>
+                                    </xsd:sequence>
+                                </xsd:complexType>
+                            </xsd:element>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="DurationOfProgramme">
+                    <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                            <xsd:pattern value="\d{1}">
+                            </xsd:pattern>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="PeriodOfProgramme">
+                    <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                            <xsd:pattern value="\d{4}-\d{4}">
+                            </xsd:pattern>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="IssueDate">
+                    <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                            <xsd:pattern value="\d{4}-\d{2}-\d{2}"/>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="University" type="xsd:string"/>
+                <xsd:element name="TotalGrade">
+                    <xsd:simpleType>
+                        <xsd:restriction base="xsd:float">
+                            <xsd:pattern value="\d+\.\d">
+                            </xsd:pattern>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="GPA" >
+                    <xsd:simpleType>
+                        <xsd:restriction base="xsd:float">
+                            <xsd:pattern value="\d+\.\d"/>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+
+    </xsd:element>
+
+</xsd:schema>

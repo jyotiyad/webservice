@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <apx:applicantProfile xmlns:apx="http://www.jsc.applicantProfile.se">
+    <apx:personalInformation>
+        <apx:ApplicantName>JyotiYadav</apx:ApplicantName>
+        <apx:City>stockholm</apx:City>
+        <apx:SSN>198807-0120</apx:SSN>
+        <apx:DOB>1988-12-12</apx:DOB>
+    </apx:personalInformation>
+
+    <apx:EducationalQualification>
+        <apx:University>KTH</apx:University>
+        <apx:Degree>Master'sInDistributedSystem</apx:Degree>
+        <apx:PassingYear>2018</apx:PassingYear>
+        <apx:NameOfProgramme>THDEK</apx:NameOfProgramme>
+        <apx:TotalGrade>3.0</apx:TotalGrade>
+        <apx:DurationOfProgramme>3</apx:DurationOfProgramme>
+        <apx:PeriodOfProgramme>2016-2018</apx:PeriodOfProgramme>
+    </apx:EducationalQualification>
+
+    <apx:EmploymentInfo>
+        <apx:Employment>
+            <apx:companyName></apx:companyName>
+            <apx:Designation>kth</apx:Designation>
+            <apx:startDate>2014-10-02</apx:startDate>
+            <apx:endDate>2016-09-12</apx:endDate>
+        </apx:Employment>
+    </apx:EmploymentInfo>
+    </apx:applicantProfile >

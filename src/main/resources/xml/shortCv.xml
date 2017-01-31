@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <cv:ShortCv xmlns:cv="http://www.jsc.shortCv.se">
+    <cv:FirstName>Jyoti</cv:FirstName>
+    <cv:LastName>Yadav</cv:LastName>
+    <cv:City>stockholm</cv:City>
+    <cv:phone>0766774960</cv:phone>
+    <cv:email>jyoti@kth.se</cv:email>
+    <cv:University>KTH</cv:University>
+    <cv:Degree>Master'sInDistributedSystem</cv:Degree>
+    <cv:FieldOfWork>Software</cv:FieldOfWork>
+    <cv:PreviousWorkExperience>3years</cv:PreviousWorkExperience>
+    <cv:SSN>198807-0120</cv:SSN>
+    <cv:RelevantExperience>mobile development, robotics</cv:RelevantExperience>
+    <cv:Interests>Interned at Google last summer, I contirbuted to one of the chrome feature on the mobile platform.</cv:Interests>
+    <cv:DrivingLicenceStatus>true</cv:DrivingLicenceStatus>
+ </cv:ShortCv>

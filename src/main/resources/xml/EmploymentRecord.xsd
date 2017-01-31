@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://www.jsc.employmentRecord.se" elementFormDefault="qualified">
+    <xsd:element name="employmentRecord">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="name" type="xsd:string"/>
+                <xsd:element name="SSN">
+                    <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                            <xsd:pattern value="\d{6}-\d{4}"/>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="address" type="xsd:string"/>
+                <xsd:element name="jobInfo" minOccurs="1" maxOccurs="unbounded">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="companyName" type="xsd:string"/>
+                            <xsd:element name="designation" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+                            <xsd:element name="allowContact" type="xsd:boolean" minOccurs="1"/>
+                            <xsd:element name="startDate">
+                                <xsd:simpleType>
+                                    <xsd:restriction base="xsd:string">
+                                        <xsd:pattern value="\d{4}-\d{2}-\d{2}"/>
+                                    </xsd:restriction>
+                                </xsd:simpleType>
+                            </xsd:element>
+                            <xsd:element name="endDate">
+                                <xsd:simpleType>
+                                    <xsd:restriction base="xsd:string">
+                                        <xsd:pattern value="\d{4}-\d{2}-\d{2}"/>
+                                    </xsd:restriction>
+                                </xsd:simpleType>
+                            </xsd:element>
+                            <xsd:element name="salary" type="xsd:decimal"/>
+                            <xsd:element name="position" type="xsd:string" minOccurs="1" maxOccurs="unbounded"/>
+                            <xsd:element name="jobDescription" type="xsd:string"/>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+</xsd:schema>
+
+
+
+
+
+
+

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<app:applicantProfile xmlns:app="http://www.jsc.applicantProfile.se">
+    <app:personalInformation>
+        <app:ApplicantName>jyoti</app:ApplicantName>
+        <app:City>stockholm</app:City>
+        <app:SSN>192334-6656</app:SSN>
+        <app:DOB>1988-12-32</app:DOB>
+    </app:personalInformation>
+
+    <app:EducationalQualification>
+        <app:University>MDU</app:University>
+        <app:Degree>Masters</app:Degree>
+        <app:PassingYear>2018</app:PassingYear>
+        <app:NameOfProgramme>THEDE</app:NameOfProgramme>
+        <app:TotalGrade>4.0</app:TotalGrade>
+        <app:DurationOfProgramme>3</app:DurationOfProgramme>
+        <app:PeriodOfProgramme>2016-2018</app:PeriodOfProgramme>
+    </app:EducationalQualification>
+
+    <app:EmploymentInfo>
+        <app:Employment>
+            <app:companyName>KTH</app:companyName>
+            <app:Designation>softwareEngineer</app:Designation>
+            <app:startDate>2014-10-02</app:startDate>
+            <app:endDate>2016-09-12</app:endDate>
+        </app:Employment>
+    </app:EmploymentInfo>
+
+</app:applicantProfile>

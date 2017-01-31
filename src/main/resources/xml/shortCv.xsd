@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://www.jsc.shortCv.se" elementFormDefault="qualified">
+    <xsd:element name="ShortCv">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="FirstName" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+                <xsd:element name="LastName" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+                <xsd:element name="City" type="xsd:string"/>
+                <xsd:element name="phone" type="xsd:string"/>
+                <xsd:element name="email" type="xsd:string" minOccurs="1" maxOccurs="unbounded"/>
+                <xsd:element name="University" type="xsd:string"/>
+                <xsd:element name="Degree" type="xsd:string"/>
+                <xsd:element name="FieldOfWork" type="xsd:string"/>
+                <xsd:element name="PreviousWorkExperience">
+                    <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                            <xsd:pattern value="\d{1}[y][e][a][r][s]"/>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="SSN" >
+                    <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                            <xsd:pattern value="\d{6}-\d{4}"/>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="RelevantExperience" type="xsd:string"/>
+                <xsd:element name="Interests" type="xsd:string"/>
+                <xsd:element name="DrivingLicenceStatus" type="xsd:boolean"/>
+            </xsd:sequence>
+        </xsd:complexType>
+
+    </xsd:element>
+</xsd:schema>

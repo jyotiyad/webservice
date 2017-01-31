@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<epr:employmentRecord xmlns:epr="http://www.jsc.employmentRecord.se">
+    <epr:name>Jyoti</epr:name>
+    <epr:SSN>198807-0120</epr:SSN>
+    <epr:address>sweden</epr:address>
+  <epr:jobInfo>
+    <epr:companyName>kth</epr:companyName>
+      <epr:designation>softwareEngineer</epr:designation>
+      <epr:allowContact>true</epr:allowContact>
+      <epr:startDate>2015-12-02</epr:startDate>
+      <epr:endDate>2016-12-23</epr:endDate>
+        <epr:salary>3000.00</epr:salary>
+      <epr:position>softwareEngineer</epr:position>
+      <epr:jobDescription>development</epr:jobDescription>
+  </epr:jobInfo>
+</epr:employmentRecord>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ts:transcript xmlns:ts="http://www.jsc.transcript.se">
+    <ts:StudentFirstName>jyoti</ts:StudentFirstName>
+    <ts:StudentLastName>Yadav</ts:StudentLastName>
+    <ts:StudentId>id3056</ts:StudentId>
+    <ts:DOB>1986-12-03</ts:DOB>
+    <ts:Programme>THDES</ts:Programme>
+    <ts:MediumOfInstruction>English</ts:MediumOfInstruction>
+    <ts:Courses>
+        <ts:Course>
+            <ts:NameOfCourse>Data Mining</ts:NameOfCourse>
+            <ts:GradesInCourse>4.0</ts:GradesInCourse>
+            <ts:CodeForCourse>DM7745</ts:CodeForCourse>
+        </ts:Course>
+        <ts:Course>
+            <ts:NameOfCourse>AI Mining</ts:NameOfCourse>
+            <ts:GradesInCourse>4.0</ts:GradesInCourse>
+            <ts:CodeForCourse>AI1234</ts:CodeForCourse>
+        </ts:Course>
+        <ts:Course>
+            <ts:NameOfCourse>Data Mining</ts:NameOfCourse>
+            <ts:GradesInCourse>2.0</ts:GradesInCourse>
+            <ts:CodeForCourse>DM7745</ts:CodeForCourse>
+        </ts:Course>
+    </ts:Courses>
+    <ts:DurationOfProgramme>3</ts:DurationOfProgramme>
+    <ts:PeriodOfProgramme>2016-2018</ts:PeriodOfProgramme>
+    <ts:IssueDate>2018-06-20</ts:IssueDate>
+    <ts:University>mff</ts:University>
+    <ts:TotalGrade>4.0</ts:TotalGrade>
+    <ts:GPA>4.0</ts:GPA>
+</ts:transcript>
