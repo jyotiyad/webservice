@@ -36,7 +36,7 @@
                             <xsd:element name="TotalGrade">
                                 <xsd:simpleType>
                                     <xsd:restriction base="xsd:float">
-                                        <xsd:pattern value="\d+\.\d">
+                                        <xsd:pattern value="\d+\.\d+">
                                         </xsd:pattern>
                                     </xsd:restriction>
                                 </xsd:simpleType>
