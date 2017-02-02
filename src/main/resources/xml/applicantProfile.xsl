@@ -25,7 +25,7 @@
           <xsl:value-of select="document('transcript.xml')//ts:University"/>
         </xsl:element>
           <xsl:element name="app:Degree">
-              <xsl:value-of select="document('transcript.xml')//ts:Programme"/>
+              <xsl:value-of select="document('transcript.xml')//ts:Degree"/>
           </xsl:element>
           <xsl:element name="app:PassingYear">
               <xsl:value-of select="document('transcript.xml')//ts:PeriodOfProgramme"/>

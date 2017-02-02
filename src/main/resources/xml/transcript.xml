@@ -9,7 +9,7 @@
     <ts:Courses>
         <ts:Course>
             <ts:NameOfCourse>Data Mining</ts:NameOfCourse>
-            <ts:GradesInCourse>4.0</ts:GradesInCourse>
+            <ts:GradesInCourse>5.0</ts:GradesInCourse>
             <ts:CodeForCourse>DM7745</ts:CodeForCourse>
         </ts:Course>
         <ts:Course>
@@ -26,7 +26,8 @@
     <ts:DurationOfProgramme>3</ts:DurationOfProgramme>
     <ts:PeriodOfProgramme>2016-2018</ts:PeriodOfProgramme>
     <ts:IssueDate>2018-06-20</ts:IssueDate>
-    <ts:University>mff</ts:University>
+    <ts:University>KTH</ts:University>
+    <ts:Degree>master's</ts:Degree>
     <ts:TotalGrade>4.0</ts:TotalGrade>
     <ts:GPA>4.0</ts:GPA>
 </ts:transcript>

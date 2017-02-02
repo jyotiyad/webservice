@@ -9,7 +9,7 @@
 
     <apx:EducationalQualification>
         <apx:University>KTH</apx:University>
-        <apx:Degree>Master'sInDistributedSystem</apx:Degree>
+        <apx:Degree>Master's</apx:Degree>
         <apx:PassingYear>2018</apx:PassingYear>
         <apx:NameOfProgramme>THDEK</apx:NameOfProgramme>
         <apx:TotalGrade>3.0</apx:TotalGrade>
@@ -19,8 +19,8 @@
 
     <apx:EmploymentInfo>
         <apx:Employment>
-            <apx:companyName></apx:companyName>
-            <apx:Designation>kth</apx:Designation>
+            <apx:companyName>Unibet</apx:companyName>
+            <apx:Designation>SoftwareEngineer</apx:Designation>
             <apx:startDate>2014-10-02</apx:startDate>
             <apx:endDate>2016-09-12</apx:endDate>
         </apx:Employment>

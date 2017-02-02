@@ -63,6 +63,8 @@
                     </xsd:simpleType>
                 </xsd:element>
                 <xsd:element name="University" type="xsd:string"/>
+                <xsd:element name="Degree" type="xsd:string"/>
+
                 <xsd:element name="TotalGrade">
                     <xsd:simpleType>
                         <xsd:restriction base="xsd:float">

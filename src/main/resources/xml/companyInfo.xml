@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ci:companyInfo xmlns:ci="http://www.jsc.companyInfo.se">
          <ci:Company>
-             <ci:CompanyName>kth</ci:CompanyName>
+             <ci:CompanyName>Unibet</ci:CompanyName>
              <ci:Location>sweden</ci:Location>
-             <ci:ReferenceInCompany>ceo</ci:ReferenceInCompany>
+             <ci:ReferenceInCompany>CEO</ci:ReferenceInCompany>
              <ci:Phone>56798097</ci:Phone>
               <ci:OrganisationId>AS5678</ci:OrganisationId>
          </ci:Company>
