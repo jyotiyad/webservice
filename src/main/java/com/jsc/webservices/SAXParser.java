@@ -77,6 +77,8 @@ public class SAXParser extends DefaultHandler {
             transcript.setIssueDate(currentCharacterValue);
         } else if (qName.equalsIgnoreCase("ts:University")) {
             transcript.setUniversity(currentCharacterValue);
+        } else if (qName.equalsIgnoreCase("ts:Degree")) {
+            transcript.setUniversity(currentCharacterValue);
         } else if (qName.equalsIgnoreCase("ts:TotalGrade")) {
             transcript.setTotalGrade(currentCharacterValue);
         } else if (qName.equalsIgnoreCase("ts:GPA")) {
